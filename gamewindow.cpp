@@ -64,9 +64,16 @@ void GameWindow::paintEvent(QPaintEvent *){
         drawFire( fireX, fireY);
 
         // Draw ships
-        Ship s = Ship( homeX, homeY, 3);
-        s.blocks[1]=KILLED;
-        drawShip(s);
+        if( isServer ){
+            Ship s = Ship( homeX, homeY, 3);
+            s.blocks[1]=KILLED;
+            drawShip(s);
+
+        } else {
+            Ship s = Ship( enemyX, enemyY, 3);
+            drawShip(s);
+        }
+
 }
 
 void GameWindow::mousePressEvent(QMouseEvent *event) {

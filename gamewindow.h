@@ -26,6 +26,7 @@ class GameWindow : public QWidget
 public:
     explicit GameWindow(QWidget *parent = 0);
     int socket_fd;
+    bool isServer;
     ~GameWindow();
 public slots:
     void fireClicked();

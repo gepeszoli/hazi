@@ -39,6 +39,7 @@ void MainWindow::on_pushButton_2_clicked()
     wc->show();
     wc->update();
     wc->hide();
+    gw->isServer = 1;
     gw->show();
 }
 // Connect to server
@@ -66,5 +67,7 @@ void MainWindow::on_pushButton_3_clicked()
     rV = ::connect(socketFD,(struct sockaddr *) &serverAddress,sizeof(serverAddress));
     CheckError(rV, "Connecting");
     cout << "Successfull connection";
+    this->hide();
+    gw->isServer = 0;
     gw->show();
 }
