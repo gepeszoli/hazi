@@ -70,7 +70,7 @@ void GameWindow::paintEvent(QPaintEvent *){
             drawShip(s);
 
         } else {
-            Ship s = Ship( enemyX, enemyY, 3);
+            Ship s = Ship( homeX, homeY, 3);
             drawShip(s);
         }
 
@@ -113,7 +113,7 @@ void GameWindow::drawFire( int x, int y) {
     brush.setColor(Qt::red);
     brush.setStyle(Qt::SolidPattern);
     painter.setBrush(brush);
-    painter.drawEllipse( x,y, 80, 80);
+    painter.drawEllipse( x,y, 60, 60);
 }
 
 void GameWindow::drawShip(Ship &ship) {
