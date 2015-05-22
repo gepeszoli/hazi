@@ -32,48 +32,35 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>30</y>
-      <width>251</width>
-      <height>221</height>
+      <x>110</x>
+      <y>40</y>
+      <width>321</width>
+      <height>381</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QPushButton" name="pushButton_2">
        <property name="text">
-        <string>PushButton</string>
+        <string>Start server</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_3">
        <property name="text">
-        <string>PushButton</string>
+        <string>Connect to server</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>PushButton</string>
+        <string>Exit</string>
        </property>
       </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>164</x>
-      <y>400</y>
-      <width>221</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

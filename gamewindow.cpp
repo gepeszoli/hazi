@@ -81,6 +81,12 @@ void GameWindow::mousePressEvent(QMouseEvent *event) {
     }
 
 }
+void GameWindow::fireClicked() {
+//    n = write(sockfd,&cmd,sizeof(cmd));
+//    if (n < 0)
+//        error("ERROR writing to socket");
+//    bzero(buffer,256);
+}
 
 void GameWindow::drawWeb(QPainter &painter, int x, int y, int size, int number) {
     int i = 0;

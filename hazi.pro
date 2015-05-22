@@ -15,11 +15,15 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     gamewindow.cpp \
-    ship.cpp
+    ship.cpp \
+    waitclientdialog.cpp \
+    utilities.cpp
 
 HEADERS  += mainwindow.h \
     gamewindow.h \
-    ship.h
+    ship.h \
+    waitclientdialog.h \
+    utilities.h
 
 FORMS    += mainwindow.ui
 
